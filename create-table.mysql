@@ -1,0 +1,17 @@
+DROP TABLE IF EXISTS game;
+CREATE TABLE game (
+    id        INT NOT NULL AUTO_INCREMENT,
+    name      VARCHAR(32) NOT NULL,
+    genre     VARCHAR(32) NOT NULL,
+    year      INT NOT NULL,
+    publisher VARCHAR(32) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+INSERT INTO game
+    (name, genre, year, publisher)
+VALUES
+    ('CS:GO', 'FPS', 1996, 'Valve'),
+    ('Minecraft', 'Sandbox', 2011, 'Mojang'),
+    ('Skyrim', 'Roleplay Fighting', 2001, 'Bethesda Studios'),
+    ('Dota 2', 'MMORPG', 2011, 'Valve');
